@@ -49,7 +49,7 @@ function Senior_Design() {
 
 				<div className="pb-10 bg-black px-2 pt-1">
 					<p>
-						Originally a Senior Design project and later adapted to compete in the 2024 SSPI Mid-Atlantic Regional Chapter's 
+						Originally a Senior Design project and later adapted to compete in the <a className="text-yellow-300" target="_blank" href="https://midatlantic.sspi.org/cpages/home" >SSPI Mid-Atlantic Regional Chapter's </a> 
 						Aerospace Science & Engineering Competition.
 					</p>
 					<br/>
