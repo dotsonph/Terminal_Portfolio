@@ -32,13 +32,34 @@ export default function Home() {
 		<Create_Proj/>
 		<Senior_Design/>
     </div>
-	);
+	)
 }
 
-function Senior_Design() {
+function Senior_Design(){
+	return ( 
+		<div className="pt-10">
+			<div className="grid grid-cols-6">
+				<div className="col-span-3 col-start-1"><Senior_Design_Desc/></div>
+				<div className="col-start-4 col-span-2 border border-gray-600 bg-gray-700 text-gray-300">	
+					<span className="w-full inline-block text-right font-bold text-xl">
+						- o <span className="text-red-600">x&nbsp;</span>
+					</span>
+					
+					<p className="text-xl md:w-full pb-0.5 text-center">
+					group_photo.png
+					</p>
+					<span className="flex justify-center py-4 bg-black"><Image src="/group.png" width={650} height={400}
+			       		alt="This is a not so great group photo following our department's presentation."/></span>
+				</div>	
+			</div>
+		</div>	
+		)
+}
+
+function Senior_Design_Desc() {
 	return (
-		<div className="pt-10 pl-40">
-			<div className="md:w-2/5 border border-gray-600 text-gray-300 bg-gray-700 text-md">
+		<div className= "pl-40">
+			<div className="md:w-4/5 border border-gray-600 text-gray-300 bg-gray-700 text-md">
 				<span className="md:w-full inline-block text-right font-bold text-xl">
 					- o <span className="text-red-600">x&nbsp;</span>
 				</span>
@@ -49,20 +70,24 @@ function Senior_Design() {
 
 				<div className="pb-10 bg-black px-2 pt-1">
 					<p>
-						Originally a Senior Design project and later adapted to compete in the <a className="text-yellow-300" target="_blank" href="https://midatlantic.sspi.org/cpages/home" >SSPI Mid-Atlantic Regional Chapter's </a> 
+						Originally a Senior Design project and later adapted to compete in the <a className="text-yellow-300" target="_blank"
+					       	href="https://midatlantic.sspi.org/cpages/home" >SSPI Mid-Atlantic Regional Chapter's </a> 
 						Aerospace Science & Engineering Competition.
 					</p>
 					<br/>
 					<p>
-						Our task being to construct two antenna feeds (L/X Band) for the GMU SATCOM Club's 9m Cassegrain Dish.
-					<p>
+						Our task being to construct two antenna feeds (L/X Band) for the  <a className="text-yellow-300" 
+						href="https://www.gmu.edu/news/2022-10/george-mason-readies-reclaimed-satellite-dish" target="_blank">
+					       	GMU SATCOM's </a> 9m Satellite Dish.
+					</p>
 					<br/>
+					<p>
 						An entire semester was dedicated to simulations and research using ANSYS HFSS/CST Studio.
 					</p>
-					</p>
 					<br/>
 					<p>
-						The next semester consisted of construction, and testing. Further tasks included compiling journal entries, rehearsing, presenting, drafting technical reports, and awaiting the long anticipated competition.
+						The next semester consisted of construction, and testing. Further tasks included compiling journal entries, rehearsing, 
+						presenting, drafting technical reports, and awaiting the long anticipated competition.
 					</p>
 				</div>
 			</div>		
