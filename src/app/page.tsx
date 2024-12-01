@@ -39,19 +39,35 @@ function Senior_Design(){
 	return ( 
 		<div className="pt-10">
 			<div className="grid grid-cols-6">
-				<div className="col-span-3 col-start-1"><Senior_Design_Desc/></div>
-				<div className="col-start-4 col-span-2 border border-gray-600 bg-gray-700 text-gray-300">	
-					<span className="w-full inline-block text-right font-bold text-xl">
+				<div className="col-span-3 col-start-1">
+					<Senior_Design_Desc/>
+				</div>
+				<div className="col-start-4 col-span-2 border border-gray-600 bg-black text-gray-300">	
+					<span className="w-full inline-block text-right font-bold bg-gray-700 text-xl">
 						- o <span className="text-red-600">x&nbsp;</span>
 					</span>
 					
-					<p className="text-xl md:w-full pb-0.5 text-center">
+					<p className="text-xl md:w-full pb-0.5 bg-gray-700 text-center">
 					group_photo.png
 					</p>
-					<span className="flex justify-center py-4 bg-black"><Image src="/group.png" width={650} height={400}
+					<span className="flex justify-center"><Image src="/group.png" width={550} height={400}
 			       		alt="This is a not so great group photo following our department's presentation."/></span>
 				</div>	
 			</div>
+			<div id="secondRow" className="p-10 columns-3 aspect-auto">
+				<Image src="/patch_sim.webp" width={400} height={501} alt="A simulation screenshot of the patch-yagi feed from below"/>
+				<Image src = "/patch_anim_side.gif" width={403} height={401} alt="A side view gif of the patch-yagi feed's electromagnetic field"/>
+				<Image src="/patch_anim_above.gif" width={513} height={501} alt="An aerial view of the patch-yagi feed's electromagnetic field"/>
+				
+				<Image src="/horn_sim.webp" width={410} height={400} alt="A simulation screenshot of the horn feed from above"/>
+				<Image src="/horn.webp" width={500} height={501} alt="An image of the final horn-feed constructed and soldered"/>
+				<Image src="/patch.webp" width={500} height={401} alt="An image of the final patch-yagi-feed constructed and soldered"/>
+			</div>
+			{/*<div id="thirdRow" className ="p-10 columns-3 flex justify-evenly aspect-auto">
+				<Image src="/horn_sim.webp" width={410} height={400} alt="A simulation screenshot of the horn feed from above"/>
+				<Image src="/horn.webp" width={500} height={501} alt="An image of the final horn-feed constructed and soldered"/>
+				<Image src="/patch.webp" width={500} height={401} alt="An image of the final patch-yagi-feed constructed and soldered"/>
+			</div>*/}
 		</div>	
 		)
 }
